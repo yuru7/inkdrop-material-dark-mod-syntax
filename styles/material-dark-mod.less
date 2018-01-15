@@ -3,11 +3,6 @@ based: Solarized theme for code-mirror
 http://ethanschoonover.com/solarized
 */
 
-/*
-Solarized color pallet
-http://ethanschoonover.com/solarized/img/solarized-palette.png
-*/
-
 @import "./colors";
 
 .editor {
@@ -86,12 +81,17 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
       color: @base03;
       opacity: 0.4;
     }
+    .CodeMirror-selected {
+      // Highlighed text
+      background-color: @base01;
+    }
   }
 
-  .CodeMirror div.CodeMirror-selected { background: @base01; }
-  .CodeMirror.CodeMirror ::selection { background: rgba(87, 96, 109, 0.99); }
-  .CodeMirror .CodeMirror-line::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: rgba(87, 96, 109, 0.99); }
+//  .CodeMirror div.CodeMirror-selected { background: @base01; }
+//  .CodeMirror.CodeMirror ::selection { background: rgba(87, 96, 109, 0.99); }
+//  .CodeMirror .CodeMirror-line::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: rgba(87, 96, 109, 0.99); }
 
+  
   /* Editor styling */
 
 
