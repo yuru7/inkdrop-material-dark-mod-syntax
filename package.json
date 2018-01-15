@@ -1,6 +1,6 @@
 {
-  "description": "Solarlized Dark",
+  "description": "Material Dark",
   "version": "0.1.0",
   "theme": "syntax",
-  "styleSheets": ["solarized.less"]
+  "styleSheets": ["material-dark-mod.less"]
 }
