@@ -1,4 +1,4 @@
-# inkdrop-material-dark-mod-syntax-theme
+# inkdrop-material-dark-mod-syntax
 material dark mod syntax theme for Inkdrop Markdown Editor
 
 [inkdrop-solarized-dark-syntax-theme](https://github.com/inkdropapp/inkdrop-solarized-dark-syntax-theme) を参考にしつつ、マテリアルカラーに"概ね"準拠するように改変したカラーテーマです。
