@@ -1,2 +1,2 @@
-# inkdrop-solarized-dark-syntax-theme
-Solarized dark syntax theme for Inkdrop Markdown Editor
+# inkdrop-material-dark-mod-syntax-theme
+material dark mod syntax theme for Inkdrop Markdown Editor
