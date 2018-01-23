@@ -1,6 +1,6 @@
 {
   "description": "Material Dark Mod",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "theme": "syntax",
   "styleSheets": ["material-dark-mod.less"]
 }
