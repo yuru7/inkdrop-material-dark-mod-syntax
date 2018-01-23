@@ -8,22 +8,39 @@
 2 info using npm@3.10.5
 3 info using node@v4.4.5
 4 info git [ 'status', '--porcelain' ]
-5 verbose stack Error: Git working directory not clean.
-5 verbose stack M package.json
-5 verbose stack     at C:\Users\yuko\AppData\Local\inkdrop\app-3.17.4\resources\app\ipm\node_modules\npm\lib\version.js:247:19
-5 verbose stack     at C:\Users\yuko\AppData\Local\inkdrop\app-3.17.4\resources\app\ipm\node_modules\npm\lib\utils\no-progress-while-running.js:21:8
-5 verbose stack     at ChildProcess.exithandler (child_process.js:204:7)
-5 verbose stack     at emitTwo (events.js:87:13)
-5 verbose stack     at ChildProcess.emit (events.js:172:7)
-5 verbose stack     at maybeClose (internal/child_process.js:827:16)
-5 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-6 verbose cwd c:\msys64\home\yuko\inkdrop-material-dark-mod-syntax
-7 error Windows_NT 10.0.16299
-8 error argv "C:\\Users\\yuko\\AppData\\Local\\inkdrop\\app-3.17.4\\resources\\app\\ipm\\bin\\node.exe" "C:\\Users\\yuko\\AppData\\Local\\inkdrop\\app-3.17.4\\resources\\app\\ipm\\node_modules\\npm\\bin\\npm-cli.js" "version" "minor" "-m" "Prepare %s release"
-9 error node v4.4.5
-10 error npm  v3.10.5
-11 error Git working directory not clean.
-11 error M package.json
-12 error If you need help, you may report this error at:
-12 error     <https://github.com/npm/npm/issues>
-13 verbose exit [ 1, true ]
+5 info lifecycle material-dark-mod-syntax@0.7.0~preversion: material-dark-mod-syntax@0.7.0
+6 silly lifecycle material-dark-mod-syntax@0.7.0~preversion: no script for preversion, continuing
+7 verbose version.write data { name: 'material-dark-mod-syntax',
+7 verbose version.write   description: 'Material Dark Mod',
+7 verbose version.write   version: '0.7.0',
+7 verbose version.write   theme: 'syntax',
+7 verbose version.write   repository:
+7 verbose version.write    { type: 'git',
+7 verbose version.write      url: 'https://github.com/yuru7/inkdrop-material-dark-mod-syntax' },
+7 verbose version.write   engines: { inkdrop: '>=3.17.0' },
+7 verbose version.write   styleSheets: [ 'material-dark-mod.less' ] } to package.json
+8 info lifecycle material-dark-mod-syntax@0.7.0~version: material-dark-mod-syntax@0.7.0
+9 silly lifecycle material-dark-mod-syntax@0.7.0~version: no script for version, continuing
+10 info git [ 'add',
+10 info git   'c:\\msys64\\home\\yuko\\inkdrop-material-dark-mod-syntax\\package.json' ]
+11 info git [ 'commit', '-m', 'Prepare 0.7.0 release' ]
+12 info git [ 'tag', 'v0.7.0', '-am', 'Prepare 0.7.0 release' ]
+13 verbose stack Error: Command failed: git -c core.longpaths=true tag v0.7.0 -am Prepare 0.7.0 release
+13 verbose stack fatal: tag 'v0.7.0' already exists
+13 verbose stack
+13 verbose stack     at ChildProcess.exithandler (child_process.js:213:12)
+13 verbose stack     at emitTwo (events.js:87:13)
+13 verbose stack     at ChildProcess.emit (events.js:172:7)
+13 verbose stack     at maybeClose (internal/child_process.js:827:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+14 verbose cwd c:\msys64\home\yuko\inkdrop-material-dark-mod-syntax
+15 error Windows_NT 10.0.16299
+16 error argv "C:\\Users\\yuko\\AppData\\Local\\inkdrop\\app-3.17.4\\resources\\app\\ipm\\bin\\node.exe" "C:\\Users\\yuko\\AppData\\Local\\inkdrop\\app-3.17.4\\resources\\app\\ipm\\node_modules\\npm\\bin\\npm-cli.js" "version" "minor" "-m" "Prepare %s release"
+17 error node v4.4.5
+18 error npm  v3.10.5
+19 error code 128
+20 error Command failed: git -c core.longpaths=true tag v0.7.0 -am Prepare 0.7.0 release
+20 error fatal: tag 'v0.7.0' already exists
+21 error If you need help, you may report this error at:
+21 error     <https://github.com/npm/npm/issues>
+22 verbose exit [ 1, true ]
