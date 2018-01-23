@@ -7,6 +7,6 @@
     "type": "git",
     "url": "https://github.com/yuru7/inkdrop-material-dark-mod-syntax"
   },
-  "engines": {"inkdrop": ">=3.17.0"}
+  "engines": {"inkdrop": ">=3.17.0"},
   "styleSheets": ["material-dark-mod.less"]
 }
