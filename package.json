@@ -1,7 +1,7 @@
 {
   "name": "material-dark-mod-syntax",
   "description": "Material Dark Mod",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "theme": "syntax",
   "repository": {
     "type": "git",
