@@ -16,17 +16,22 @@ http://ethanschoonover.com/solarized
     background-color: @base00;
     text-shadow: @base00 0 1px;
 
-    .cm-header { color: @base-yellow; }
+    .cm-header { color: @base-orange; }
     .cm-quote { color: @base05; }
 
-    .cm-keyword { color: @base-orange; }
-    .cm-atom { color: @base-magenta; }
-    .cm-number { color: @base-magenta; }
+    .cm-atom { color: @base-pink; }
+    .cm-number { color: @base-pink; }
     .cm-def { color: @base-cyan; }
 
     .cm-variable { color: @base04; }
-    .cm-variable-2 { color: @base-cyan; }
-    .cm-variable-3 { color: @base-lightgreen; }
+    // .cm-variable-2 { color: @base-cyan; }
+    // .cm-variable-3 { color: @base-lightgreen; }
+    // .cm-keyword { color: @base-orange; }
+    .cm-variable-2.cm-formatting-list-ul { color: @base-cyan; }
+    .cm-variable-3.cm-formatting-list-ul { color: @base-lightgreen; }
+    .cm-keyword.cm-formatting-list-ul { color: @base-orange; }
+    .cm-formatting-list-ol { color: @base-lightteal; }
+    // .cm-formatting-list {color: @base-cyan;}
 
     .cm-property { color: @base-violet; }
     .cm-operator { color: @base-cyan; }
@@ -35,14 +40,14 @@ http://ethanschoonover.com/solarized
     
     .cm-quote { color: @base-violet; }
 
-    .cm-string { color: @base-light-teal; }
+    .cm-string { color: @base-lightteal; }
     .cm-string-2 { color: @base-cyan; }
 
     .cm-meta { color: @base-teal; }
-    .cm-qualifier { color: @base-yellow; }
-    .cm-builtin { color: @base-magenta; }
+    .cm-qualifier { color: @base-orange; }
+    .cm-builtin { color: @base-pink; }
     .cm-bracket { color: @base-orange; }
-    .CodeMirror-matchingbracket { color: @base-cyan; }
+    .CodeMirror-matchingbracket { color: @base-strongorange; }
     .CodeMirror-nonmatchingbracket { color: @base-red; }
     .cm-tag { color: @base05; }
     .cm-attribute { color: @base-cyan; }
@@ -60,10 +65,9 @@ http://ethanschoonover.com/solarized
     */
     .cm-link { color: @base-blue; cursor: pointer; }
     .cm-special { color: @base-violet; }
-/*     .cm-em {
-      text-decoration: underline;
-      text-decoration-style: dotted;
-    } */
+    .cm-em { 
+      font-style: italic;
+      color: @base-lightgreen; }
     .cm-strong { color: @base-red; }
     .cm-error,
     .cm-invalidchar {
@@ -147,7 +151,7 @@ http://ethanschoonover.com/solarized
 
   .cm-searching {
     // Ctrl + F results
-    border: 1px solid @base-yellow;
+    border: 1px solid @base-orange;
     padding: 2px;
     color: white !important;
     background: transparent;
