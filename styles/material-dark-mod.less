@@ -16,37 +16,37 @@ http://ethanschoonover.com/solarized
     background-color: @base00;
     //text-shadow: @base00 0 1px;
 
-    .cm-header { color: @base-orange; }
+    .cm-header { color: @base-amber; }
     .cm-quote { color: @base05; }
 
     .cm-atom { color: @base-pink; }
     .cm-number { color: @base-pink; }
     .cm-property { color: @base-blue; }
-    .cm-def { color: @base-orange; }
+    .cm-def { color: @base-amber; }
     .cm-variable { color: @base-pink; }
     // .cm-variable-2 { color: @base-cyan; }
     // .cm-variable-3 { color: @base-lightgreen; }
-    // .cm-keyword { color: @base-violet; }
+    // .cm-keyword { color: @base-purple; }
     .cm-variable-2.cm-formatting-list-ul { color: @base-cyan; }
     .cm-variable-3.cm-formatting-list-ul { color: @base-lightgreen; }
-    .cm-keyword.cm-formatting-list-ul { color: @base-orange; }
+    .cm-keyword.cm-formatting-list-ul { color: @base-amber; }
     .cm-formatting-list-ol { color: @base-cyan; }
     // .cm-formatting-list {color: @base-cyan;}
 
     .cm-operator { color: @base-cyan; }
 
-    .cm-comment { color: @base04; }
+    .cm-comment { color: @base-indigo; }
     
-    .cm-quote { color: @base-violet; }
+    .cm-quote { color: @base-purple; }
 
     .cm-string { color: @base-lightgreen; }
     .cm-string-2 { color: @base-cyan; }
 
     .cm-meta { color: @base-teal; }
-    .cm-qualifier { color: @base-orange; }
+    .cm-qualifier { color: @base-amber; }
     .cm-builtin { color: @base-pink; }
-    .cm-bracket { color: @base-orange; }
-    .CodeMirror-matchingbracket { color: @base-strongorange; }
+    .cm-bracket { color: @base-amber; }
+    .CodeMirror-matchingbracket { color: @base-deeporange; }
     .CodeMirror-nonmatchingbracket { color: @base-red; }
     .cm-tag { color: @base05; }
     .cm-attribute { color: @base-cyan; }
@@ -63,7 +63,12 @@ http://ethanschoonover.com/solarized
     }
     */
     .cm-link { color: @base-blue; cursor: pointer; }
-    .cm-special { color: @base-violet; }
+    .cm-url {
+      color: @base-blue;
+      opacity: 0.7;
+    }
+
+    .cm-special { color: @base-purple; }
     .cm-em { 
       font-style: italic;
       color: @base-lightgreen; }
@@ -150,7 +155,7 @@ http://ethanschoonover.com/solarized
 
   .cm-searching {
     // Ctrl + F results
-    border: 1px solid @base-orange;
+    border: 1px solid @base-amber;
     padding: 2px;
     color: white !important;
     background: transparent;
