@@ -18,32 +18,33 @@ http://ethanschoonover.com/solarized
 
     .cm-header { color: @base-amber; }
 
-    .cm-atom { color: @base-green; }
-    .cm-number { color: @base-red; }
-    .cm-property { color: @base-cyan; }
-    .cm-def { color: @base-amber; }
-    .cm-variable { color: @base-pink; }
+    .cm-atom { color: @base-pink; }
+    .cm-number { color: @base-orange; }
+    .cm-property { color: @base-amber; }
+    .cm-def { color: @base-pink; }
+    .cm-operator { color: @base-cyan; }
+    .cm-variable { color: @base-indigo; }
     // .cm-variable-2 { color: @base-cyan; }
     // .cm-variable-3 { color: @base-lightgreen; }
     // .cm-keyword { color: @base-purple; }
+
     .cm-variable-2.cm-formatting-list-ul { color: @base-cyan; }
     .cm-variable-3.cm-formatting-list-ul { color: @base-lightgreen; }
     .cm-keyword.cm-formatting-list-ul { color: @base-amber; }
-    .cm-formatting-list-ol { color: @base-cyan; }
+    .cm-formatting-list-ol { color: @base-lightgreen; }
     // .cm-formatting-list {color: @base-cyan;}
-
-    .cm-operator { color: @base-lightteal; }
+    .cm-formatting.cm-formatting-task.cm-meta { color: @base03; }
 
     .cm-comment { color: @base04; }
 
-    .cm-quote { color: @base-purple; }
+    .cm-quote { color: @base-indigo; }
 
     .cm-string { color: @base-lightgreen; }
-    .cm-string-2 { color: @base-cyan; }
+    .cm-string-2 { color: @base-green; }
 
     .cm-meta { color: @base-teal; }
     .cm-qualifier { color: @base-amber; }
-    .cm-builtin { color: @base-red; }
+    .cm-builtin { color: @base-purple; }
     .cm-bracket { color: @base-amber; }
     .CodeMirror-matchingbracket { color: @base-orange; }
     .CodeMirror-nonmatchingbracket { color: @base-red; }
@@ -147,6 +148,10 @@ http://ethanschoonover.com/solarized
 
   .cm-formatting-header {
     opacity: 0.3;
+  }
+
+  .cm-formatting-strong, .cm-formatting-em {
+    opacity: 0.6;
   }
 
   .cm-searching {
