@@ -36,7 +36,10 @@ http://ethanschoonover.com/solarized
 
     .cm-formatting.cm-formatting-task.cm-meta { color: @base03; }
 
-    .cm-comment { color: @base04; }
+    .cm-comment { color: @base03; }
+    .cm-formatting-code + .cm-comment {
+      color: @base-amber !important;
+    }
 
     .cm-quote { color: @base-indigo; }
 
@@ -119,10 +122,6 @@ http://ethanschoonover.com/solarized
   .CodeMirror .CodeMirror-gutters {
     background-color: @base00;
     border-color: #4F5B66;
-  }
-
-  .CodeMirror .CodeMirror-linenumber {
-    text-shadow: #021014 0 -1px;
   }
 
   /* Common */
