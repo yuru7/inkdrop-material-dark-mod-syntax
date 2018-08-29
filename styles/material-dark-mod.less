@@ -38,7 +38,7 @@ http://ethanschoonover.com/solarized
 
     .cm-comment { color: @base03; }
     .cm-formatting-code + .cm-comment {
-      color: @base-amber !important;
+      color: @base-lightlightgreen !important;
     }
 
     .cm-quote { color: @base-indigo; }
@@ -66,14 +66,21 @@ http://ethanschoonover.com/solarized
       display: block;
     }
     */
-    .cm-link { color: @base-indigo; cursor: pointer; }
-    .cm-url { color: @base-teal; }
+    .cm-link { color: @base-blue; cursor: pointer; }
+    .cm-url {
+      color: @base-blue;
+      opacity: 0.8;
+    }
 
-    .cm-special { color: @base-purple; }
     .cm-em {
       font-style: italic;
       color: @base-lightgreen; }
     .cm-strong { color: @base-lightred; }
+    .cm-formatting-strong, .cm-formatting-em {
+      opacity: 0.6;
+    }
+
+    .cm-special { color: @base-purple; }
     .cm-error,
     .cm-invalidchar {
       color: @base02;
@@ -148,10 +155,6 @@ http://ethanschoonover.com/solarized
 
   .cm-formatting-header {
     opacity: 0.3;
-  }
-
-  .cm-formatting-strong, .cm-formatting-em {
-    opacity: 0.6;
   }
 
   .cm-searching {
