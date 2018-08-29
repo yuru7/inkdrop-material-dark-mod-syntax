@@ -38,7 +38,10 @@ http://ethanschoonover.com/solarized
 
     .cm-comment { color: @base03; }
     .cm-formatting-code + .cm-comment {
-      color: @base-cyan !important;
+      color: @base-cyan;
+    }
+    .cm-formatting-code + .cm-formatting-code {
+      color: @base03;
     }
 
     .cm-quote { color: @base-indigo; }
