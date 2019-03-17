@@ -14,29 +14,40 @@ http://ethanschoonover.com/solarized
     rendering-intent: auto;
     color: @base05;
     background-color: @base00;
-    //text-shadow: @base00 0 1px;
 
-    .cm-header { color: @base-amber; }
+    .cm-header { color: @base-yellow; }
+    .cm-formatting-header {
+      opacity: 0.5;
+    }
 
     .cm-atom { color: @base-pink; }
     .cm-number { color: @base-orange; }
-    .cm-property { color: @base-amber; }
+    .cm-property { color: @base-yellow; }
     .cm-def { color: @base-pink; }
     .cm-operator { color: @base-cyan; }
     .cm-variable { color: @base-indigo; }
     // .cm-variable-2 { color: @base-cyan; }
     // .cm-variable-3 { color: @base-lightgreen; }
-    // .cm-keyword { color: @base-purple; }
+    .cm-keyword { color: @base-purple; }
+    // .cm-keyword セレクタの影響で3段目のリストの色も変わってしまう現象を回避
+    .cm-formatting + .cm-keyword { color: @base05; }
+    .cm-keyword + .cm-keyword { color: @base05; }
 
+    // Bulleted list
     .cm-variable-2.cm-formatting-list-ul { color: @base-lightteal; }
-    .cm-variable-3.cm-formatting-list-ul { color: @base-amber; }
+    .cm-variable-3.cm-formatting-list-ul { color: @base-yellow; }
     .cm-keyword.cm-formatting-list-ul { color: @base-lightred; }
 
+    // Num list
     .cm-formatting-list-ol { color: @base-lightteal; }
 
+    // Unchecked task box
     .cm-formatting.cm-formatting-task.cm-meta { color: @base03; }
 
+    // Comment
     .cm-comment { color: @base03; }
+
+    //Code
     .cm-formatting-code + .cm-comment {
       color: @base-cyan;
     }
@@ -44,15 +55,18 @@ http://ethanschoonover.com/solarized
       color: @base03;
     }
 
-    .cm-quote { color: @base-purple; }
+    .cm-quote {
+                color: @base-purple;
+                font-style: italic;
+              }
 
     .cm-string { color: @base-lightgreen; }
     .cm-string-2 { color: @base-green; }
 
     .cm-meta { color: @base-teal; }
-    .cm-qualifier { color: @base-amber; }
+    .cm-qualifier { color: @base-yellow; }
     .cm-builtin { color: @base-purple; }
-    .cm-bracket { color: @base-amber; }
+    .cm-bracket { color: @base-yellow; }
     .CodeMirror-matchingbracket { color: @base-orange; }
     .CodeMirror-nonmatchingbracket { color: @base-red; }
     .cm-tag { color: @base05; }
@@ -69,17 +83,31 @@ http://ethanschoonover.com/solarized
       display: block;
     }
     */
-    .cm-link { color: @base-indigo; cursor: pointer; }
+    // Link
+    .cm-keyword.cm-link,
+    .cm-link {
+               color: @base-indigo;
+               cursor: pointer;
+             }
+    .cm-keyword.cm-url,
     .cm-url {
       color: @base-indigo;
+      cursor: pointer;
+      text-decoration: underline;
       opacity: 0.7;
     }
 
+    .cm-keyword.cm-em,
     .cm-em {
       font-style: italic;
-      color: @base-lightgreen; }
-    .cm-strong { color: @base-lightred; }
-    .cm-formatting-strong, .cm-formatting-em {
+      color: @base-lightgreen;
+    }
+    .cm-keyword.cm-strong,
+    .cm-strong {
+      color: @base-lightred;
+    }
+    .cm-formatting-strong,
+    .cm-formatting-em {
       opacity: 0.6;
     }
 
@@ -156,13 +184,9 @@ http://ethanschoonover.com/solarized
     background: rgba(255, 255, 255, 0.10);
   }
 
-  .cm-formatting-header {
-    opacity: 0.3;
-  }
-
   .cm-searching {
     // Ctrl + F results
-    border: 1px solid @base-amber;
+    border: 1px solid @base-yellow;
     padding: 2px;
     color: white !important;
     background: transparent;
