@@ -28,7 +28,9 @@ http://ethanschoonover.com/solarized
     .cm-variable { color: @base-indigo; }
     // .cm-variable-2 { color: @base-cyan; }
     // .cm-variable-3 { color: @base-lightgreen; }
+    .cm-tag { color: @base-orange; }
     .cm-keyword { color: @base-purple; }
+    
     // .cm-keyword セレクタの影響で3段目のリストの色も変わってしまう現象を回避
     .cm-formatting + .cm-keyword { color: @base05; }
     .cm-keyword + .cm-keyword { color: @base05; }
@@ -66,10 +68,9 @@ http://ethanschoonover.com/solarized
     .cm-meta { color: @base-teal; }
     .cm-qualifier { color: @base-yellow; }
     .cm-builtin { color: @base-purple; }
-    .cm-bracket { color: @base-yellow; }
+//    .cm-bracket { color: @base05; }
     .CodeMirror-matchingbracket { color: @base-orange; }
     .CodeMirror-nonmatchingbracket { color: @base-red; }
-    .cm-tag { color: @base05; }
     .cm-attribute { color: @base-cyan; }
 
     .CodeMirror-widget {
@@ -88,13 +89,13 @@ http://ethanschoonover.com/solarized
     .cm-link {
                color: @base-indigo;
                cursor: pointer;
+               text-decoration: none;
              }
     .cm-keyword.cm-url,
     .cm-url {
-      color: @base-indigo;
+      color: @base03;
       cursor: pointer;
-      text-decoration: underline;
-      opacity: 0.7;
+      text-decoration: none;
     }
 
     .cm-keyword.cm-em,
