@@ -196,13 +196,14 @@ http://ethanschoonover.com/solarized
   .CodeMirror .CodeMirror-linewidget img.inline-widget {
     background: rgba(255,255,255,0.05);
   }
-
-  .CodeMirror-vscrollbar {
-    background: @base01
-  }
   
   .CodeMirror-placeholder {
     color: @base03;
   }
+}
 
+body:not(.platform-darwin) .editor {
+  .CodeMirror-vscrollbar {
+    background: @base01
+  }
 }
