@@ -1,6 +1,6 @@
 /*
 based: Solarized theme for code-mirror
-http://ethanschoonover.com/solarized
+http ://ethanschoonover.com/solarized
 */
 
 @import "./colors";
@@ -10,133 +10,208 @@ http://ethanschoonover.com/solarized
   /* Color scheme for code-mirror */
 
   .CodeMirror {
-    color-profile: sRGB;
+    color-profile   : sRGB;
     rendering-intent: auto;
-    color: @base05;
+    color           : @base05;
     background-color: @base00;
 
-    .cm-header { color: @base-yellow; }
+    .cm-header {
+      color: @base-yellow;
+    }
+
     .cm-formatting-header {
       opacity: 0.5;
     }
 
-    .cm-atom { color: @base-pink; }
-    .cm-number { color: @base-orange; }
-    .cm-property { color: @base-yellow; }
-    .cm-def { color: @base-pink; }
-    .cm-operator { color: @base-cyan; }
-    .cm-variable { color: @base-indigo; }
-    // .cm-variable-2 { color: @base-cyan; }
-    // .cm-variable-3 { color: @base-lightgreen; }
-    .cm-tag { color: @base-orange; }
-    .cm-keyword { color: @base-purple; }
-    
-    // .cm-keyword セレクタの影響で3段目のリストの色も変わってしまう現象を回避
-    .cm-formatting + .cm-keyword { color: @base05; }
-    .cm-keyword + .cm-keyword { color: @base05; }
+    .cm-atom {
+      color: @base-pink;
+    }
 
-    // Bulleted list
-    .cm-variable-2.cm-formatting-list-ul { color: @base-lightteal; }
-    .cm-variable-3.cm-formatting-list-ul { color: @base-yellow; }
-    .cm-keyword.cm-formatting-list-ul { color: @base-lightred; }
+    .cm-number {
+      color: @base-orange;
+    }
 
-    // Num list
-    .cm-formatting-list-ol { color: @base-lightteal; }
+    .cm-property {
+      color: @base-yellow;
+    }
 
-    // Unchecked task box
-    .cm-formatting.cm-formatting-task.cm-meta { color: @base03; }
+    .cm-def {
+      color: @base-pink;
+    }
 
-    // Comment
-    .cm-comment { color: @base03; }
-
-    //Code
-    .cm-formatting-code + .cm-comment {
+    .cm-operator {
       color: @base-cyan;
     }
-    .cm-formatting-code + .cm-formatting-code {
+
+    .cm-variable {
+      color: @base-indigo;
+    }
+
+    // .cm-variable-2 { color: @base-cyan; }
+    // .cm-variable-3 { color: @base-lightgreen; }
+    .cm-tag {
+      color: @base-orange;
+    }
+
+    .cm-keyword {
+      color: @base-purple;
+    }
+
+    // .cm-keyword セレクタの影響で3段目のリストの色も変わってしまう現象を回避
+    .cm-formatting+.cm-keyword {
+      color: @base05;
+    }
+
+    .cm-keyword+.cm-keyword {
+      color: @base05;
+    }
+
+    // Bulleted list
+    .cm-variable-2.cm-formatting-list-ul {
+      color: @base-lightteal;
+    }
+
+    .cm-variable-3.cm-formatting-list-ul {
+      color: @base-yellow;
+    }
+
+    .cm-keyword.cm-formatting-list-ul {
+      color: @base-lightred;
+    }
+
+    // Num list
+    .cm-formatting-list-ol {
+      color: @base-lightteal;
+    }
+
+    // Unchecked task box
+    .cm-formatting.cm-formatting-task.cm-meta {
+      color: @base03;
+    }
+
+    // Comment
+    .cm-comment {
+      color: @base03;
+    }
+
+    //Code
+    .cm-formatting-code+.cm-comment {
+      color: @base-cyan;
+    }
+
+    .cm-formatting-code+.cm-formatting-code {
       color: @base03;
     }
 
     .cm-quote {
-                color: @base-purple;
-                font-style: italic;
-              }
+      color     : @base-purple;
+      font-style: italic;
+    }
 
-    .cm-string { color: @base-lightgreen; }
-    .cm-string-2 { color: @base-green; }
+    .cm-string {
+      color: @base-lightgreen;
+    }
 
-    .cm-meta { color: @base-teal; }
-    .cm-qualifier { color: @base-yellow; }
-    .cm-builtin { color: @base-purple; }
-//    .cm-bracket { color: @base05; }
-    .CodeMirror-matchingbracket { color: @base-orange; }
-    .CodeMirror-nonmatchingbracket { color: @base-red; }
-    .cm-attribute { color: @base-cyan; }
+    .cm-string-2 {
+      color: @base-green;
+    }
+
+    .cm-meta {
+      color: @base-teal;
+    }
+
+    .cm-qualifier {
+      color: @base-yellow;
+    }
+
+    .cm-builtin {
+      color: @base-purple;
+    }
+
+    //    .cm-bracket { color: @base05; }
+    .CodeMirror-matchingbracket {
+      color: @base-orange;
+    }
+
+    .CodeMirror-nonmatchingbracket {
+      color: @base-red;
+    }
+
+    .cm-attribute {
+      color: @base-cyan;
+    }
 
     .CodeMirror-widget {
       text-shadow: none;
     }
 
-    /*
     .cm-hr {
-      color: transparent;
-      border-top: 1px solid @base02;
-      display: block;
+      color: @base-cyan;
     }
-    */
+
     // Link
     .cm-keyword.cm-link,
     .cm-link {
-               color: @base-indigo;
-               cursor: pointer;
-               text-decoration: none;
-             }
+      color                  : @base-indigo;
+      cursor                 : pointer;
+      text-decoration        : underline;
+      text-underline-position: under;
+    }
+
     .cm-keyword.cm-url,
     .cm-url {
-      color: @base03;
-      cursor: pointer;
+      color          : @base03;
+      cursor         : pointer;
       text-decoration: none;
     }
 
     .cm-keyword.cm-em,
     .cm-em {
       font-style: italic;
-      color: @base-lightgreen;
+      color     : @base-lightgreen;
     }
+
     .cm-keyword.cm-strong,
     .cm-strong {
       color: @base-lightred;
     }
+
     .cm-formatting-strong,
     .cm-formatting-em {
       opacity: 0.6;
     }
 
-    .cm-special { color: @base-purple; }
+    .cm-special {
+      color: @base-purple;
+    }
+
     .cm-error,
     .cm-invalidchar {
-      color: @base02;
+      color        : @base02;
       border-bottom: 1px dotted @base-red;
     }
+
     .cm-whitespace::before {
-      color: @base03;
+      color  : @base03;
       opacity: 0.4;
     }
 
     // carriage return
-    .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
-      color: @base03;
+    .CodeMirror-code>div>pre>span::after,
+    .CodeMirror-line>span::after {
+      color  : @base03;
       opacity: 0.4;
     }
+
     .CodeMirror-selected {
       // Highlighed text
       background-color: @base01;
     }
   }
 
-//  .CodeMirror div.CodeMirror-selected { background: @base01; }
-//  .CodeMirror.CodeMirror ::selection { background: rgba(87, 96, 109, 0.99); }
-//  .CodeMirror .CodeMirror-line::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: rgba(87, 96, 109, 0.99); }
+  //  .CodeMirror div.CodeMirror-selected { background: @base01; }
+  //  .CodeMirror.CodeMirror                          ::selection { background: rgba(87, 96, 109, 0.99); }
+  //  .CodeMirror .CodeMirror-line                    ::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: rgba(87, 96, 109, 0.99); }
 
 
   /* Editor styling */
@@ -145,9 +220,9 @@ http://ethanschoonover.com/solarized
 
   /* Little shadow on the view-port of the buffer view */
   .CodeMirror {
-    -moz-box-shadow: inset 7px 0 12px -6px #000;
+    -moz-box-shadow   : inset 7px 0 12px -6px #000;
     -webkit-box-shadow: inset 7px 0 12px -6px #000;
-    box-shadow: inset 7px 0 12px -6px #000;
+    box-shadow        : inset 7px 0 12px -6px #000;
   }
 
   /* Gutter border and some shadow from it  */
@@ -160,22 +235,30 @@ http://ethanschoonover.com/solarized
   /* Dark */
   .CodeMirror .CodeMirror-gutters {
     background-color: @base00;
-    border-color: #4F5B66;
+    border-color    : #4F5B66;
   }
 
   /* Common */
   .CodeMirror .CodeMirror-linenumber {
-    color: @base02;
+    color  : @base02;
     padding: 0 5px;
   }
-  .CodeMirror .CodeMirror-guttermarker-subtle { color: @base02; }
-  .CodeMirror .CodeMirror-guttermarker { color: #ddd; }
+
+  .CodeMirror .CodeMirror-guttermarker-subtle {
+    color: @base02;
+  }
+
+  .CodeMirror .CodeMirror-guttermarker {
+    color: #ddd;
+  }
 
   .CodeMirror .CodeMirror-gutter .CodeMirror-gutter-text {
     color: @base02;
   }
 
-  .CodeMirror .CodeMirror-cursor { border-left: 2px solid #FFE9A0; }
+  .CodeMirror .CodeMirror-cursor {
+    border-left: 2px solid #FFE9A0;
+  }
 
   /*
   Active line. Negative margin compensates left padding of the text in the
@@ -187,16 +270,16 @@ http://ethanschoonover.com/solarized
 
   .cm-searching {
     // Ctrl + F results
-    border: 1px solid @base-yellow;
-    padding: 2px;
-    color: white !important;
+    border    : 1px solid @base-yellow;
+    padding   : 2px;
+    color     : white !important;
     background: transparent;
   }
 
   .CodeMirror .CodeMirror-linewidget img.inline-widget {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
   }
-  
+
   .CodeMirror-placeholder {
     color: @base03;
   }
