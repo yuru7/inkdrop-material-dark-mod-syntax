@@ -1,6 +1,6 @@
 {
-  "name": "material-dark-mod-syntax",
-  "description": "Material Dark Mod",
+  "name": "dev-material-dark-mod-syntax",
+  "description": "Dev Material Dark Mod",
   "version": "1.4.0",
   "theme": "syntax",
   "repository": {
