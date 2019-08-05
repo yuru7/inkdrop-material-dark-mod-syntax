@@ -1,6 +1,6 @@
 {
-  "name": "dev-material-dark-mod-syntax",
-  "description": "Dev Material Dark Mod",
+  "name": "material-dark-mod-syntax",
+  "description": "Material Dark Mod",
   "version": "1.4.0",
   "theme": "syntax",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/yuru7/inkdrop-material-dark-mod-syntax"
   },
   "engines": {
-    "inkdrop": ">=3.17.0"
+    "inkdrop": ">=4.3.0"
   },
   "styleSheets": [
     "material-dark-mod.less"
