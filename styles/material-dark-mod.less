@@ -91,7 +91,7 @@ http ://ethanschoonover.com/solarized
 
     // Comment
     .cm-comment {
-      color: @base04;
+      color: @base03;
     }
 
     //Code
@@ -99,9 +99,10 @@ http ://ethanschoonover.com/solarized
       color: @base-cyan;
     }
 
+    // Code block symbol
     .cm-formatting-code,
     .cm-formatting-code-block {
-      color: @base03;
+      color: @base04;
     }
 
     .cm-quote {
@@ -146,8 +147,11 @@ http ://ethanschoonover.com/solarized
       text-shadow: none;
     }
 
-    .cm-hr {
-      color: @base-cyan;
+    // Horizontal line and table line
+    .cm-hr,
+    .cm-table-sep,
+    .table-row.table-row-1 {
+      color: @base-purple;
     }
 
     // Link
@@ -247,7 +251,7 @@ http ://ethanschoonover.com/solarized
 
   /* Common */
   .CodeMirror .CodeMirror-linenumber {
-    color  : @base02;
+    color  : @base03;
     padding: 0 5px;
   }
 
@@ -290,6 +294,7 @@ http ://ethanschoonover.com/solarized
   .CodeMirror-placeholder {
     color: @base04;
   }
+
 }
 
 body:not(.platform-darwin) .editor {
