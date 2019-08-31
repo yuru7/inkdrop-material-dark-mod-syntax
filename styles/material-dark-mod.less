@@ -24,7 +24,7 @@ http ://ethanschoonover.com/solarized
     }
 
     .cm-atom {
-      color: @base-pink;
+      color: @base-cyan;
     }
 
     // .cm-number {
@@ -68,7 +68,7 @@ http ://ethanschoonover.com/solarized
 
     // Bulleted list
     .cm-variable-2.cm-formatting-list-ul {
-      color: @base-lightteal;
+      color: @base-teal;
     }
 
     .cm-variable-3.cm-formatting-list-ul {
@@ -76,12 +76,12 @@ http ://ethanschoonover.com/solarized
     }
 
     .cm-keyword.cm-formatting-list-ul {
-      color: @base-lightred;
+      color: @base-deeporange;
     }
 
     // Num list
     .cm-formatting-list-ol {
-      color: @base-lightteal;
+      color: @base-teal;
     }
 
     // Unchecked task box
@@ -115,15 +115,15 @@ http ://ethanschoonover.com/solarized
     }
 
     .cm-string-2 {
-      color: @base-green;
-    }
-
-    .cm-meta {
       color: @base-teal;
     }
 
+    .cm-meta {
+      color: @base03;
+    }
+
     .cm-qualifier {
-      color: @base-yellow;
+      color: @base-purple;
     }
 
     .cm-builtin {
@@ -140,7 +140,7 @@ http ://ethanschoonover.com/solarized
     }
 
     .cm-attribute {
-      color: @base-cyan;
+      color: @base-purple;
     }
 
     .CodeMirror-widget {
@@ -175,7 +175,8 @@ http ://ethanschoonover.com/solarized
     }
 
     .cm-string.cm-url {
-      color          : @base03;
+      color          : @base-indigo;
+      opacity: 0.6;
       cursor         : pointer;
     }
 
@@ -187,7 +188,7 @@ http ://ethanschoonover.com/solarized
 
     .cm-keyword.cm-strong,
     .cm-strong {
-      color: @base-lightred;
+      color: @base-deeporange;
     }
 
     .cm-formatting-strong,
@@ -221,6 +222,8 @@ http ://ethanschoonover.com/solarized
       // Highlighed text
       background-color: @base01;
     }
+
+
   }
 
   //  .CodeMirror div.CodeMirror-selected { background: @base02; }
@@ -298,6 +301,9 @@ http ://ethanschoonover.com/solarized
     color: @base04;
   }
 
+  .gfm-codeblock-bg:not(.gfm-codeblock-begin-bg):not(.gfm-codeblock-end-bg) {
+      background: rgba(0,0,0,0.15);
+    }
 }
 
 body:not(.platform-darwin) .editor {
