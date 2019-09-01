@@ -1,6 +1,0 @@
-{
-  "description": "Material Dark",
-  "version": "0.1.0",
-  "theme": "syntax",
-  "styleSheets": ["material-dark-mod.less"]
-}
