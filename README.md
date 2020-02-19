@@ -2,7 +2,7 @@
 
 material-dark-mod-syntax is a syntax theme like Google Material Color for Inkdrop Markdown Editor.
 
-It's forked from [inkdrop-solarized-dark-syntax-theme] (https://github.com/inkdropapp/inkdrop-solarized-dark-syntax-theme).
+It's forked from [inkdrop-solarized-dark-syntax-theme](https://github.com/inkdropapp/inkdrop-solarized-dark-syntax-theme).
 
 ## Install
 
