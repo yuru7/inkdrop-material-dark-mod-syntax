@@ -12,7 +12,7 @@ http ://ethanschoonover.com/solarized
   .CodeMirror {
     color-profile   : sRGB;
     rendering-intent: auto;
-    color           : @base05;
+    color           : @base06;
     background-color: @base00;
 
     .cm-header {
@@ -50,7 +50,7 @@ http ://ethanschoonover.com/solarized
     // .cm-variable-2 { color: @base-cyan; }
     // .cm-variable-3 { color: @base-lightgreen; }
     .cm-tag {
-      color: @base-orange;
+      color: @base-deeporange;
     }
 
     .cm-keyword {
@@ -59,24 +59,24 @@ http ://ethanschoonover.com/solarized
 
     // .cm-keyword セレクタの影響で3段目のリストの色も変わってしまう現象を回避
     .cm-formatting+.cm-keyword {
-      color: @base05;
+      color: @base06;
     }
 
     .cm-keyword+.cm-keyword {
-      color: @base05;
+      color: @base06;
     }
 
     // Bulleted list
     .cm-variable-2.cm-formatting-list-ul {
-      color: @base-teal;
-    }
-
-    .cm-variable-3.cm-formatting-list-ul {
       color: @base-yellow;
     }
 
-    .cm-keyword.cm-formatting-list-ul {
+    .cm-variable-3.cm-formatting-list-ul {
       color: @base-deeporange;
+    }
+
+    .cm-keyword.cm-formatting-list-ul {
+      color: @base-teal;
     }
 
     // Num list
@@ -96,7 +96,7 @@ http ://ethanschoonover.com/solarized
 
     //Code
     .cm-inline-code {
-      color: @base-cyan;
+      color: @base05;
     }
 
     // Code block symbol
@@ -130,7 +130,6 @@ http ://ethanschoonover.com/solarized
       color: @base-purple;
     }
 
-    //    .cm-bracket { color: @base05; }
     .CodeMirror-matchingbracket {
       color: @base-orange;
     }
@@ -159,8 +158,6 @@ http ://ethanschoonover.com/solarized
 
     // Link
     .cm-url {
-      text-decoration        : underline;
-      text-underline-position: under;
       cursor                 : pointer;
     }
 
@@ -176,7 +173,7 @@ http ://ethanschoonover.com/solarized
 
     .cm-string.cm-url {
       color          : @base-indigo;
-      opacity: 0.6;
+      opacity: 0.7;
       cursor         : pointer;
     }
 
@@ -300,9 +297,16 @@ http ://ethanschoonover.com/solarized
     background: rgba(255, 255, 255, 0.05);
   }
 
+  .cm-inline-code:not(.cm-formatting-code),
   .gfm-codeblock-bg:not(.gfm-codeblock-begin-bg):not(.gfm-codeblock-end-bg) {
-      background: rgba(0,0,0,0.15);
-    }
+    background: rgba(0,0,0,0.15);
+  }
+
+  .cm-inline-code:not(.cm-formatting-code) {
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    border-radius: 0.25em;
+    padding: 0.1em 0.2em;
+  }
 }
 
 body:not(.platform-darwin) .editor {
