@@ -3,16 +3,15 @@ based: Solarized theme for code-mirror
 http ://ethanschoonover.com/solarized
 */
 
-@import "./colors";
+@import './colors';
 
 .editor {
-
   /* Color scheme for code-mirror */
 
   .CodeMirror {
-    color-profile   : sRGB;
+    color-profile: sRGB;
     rendering-intent: auto;
-    color           : @base06;
+    color: @base06;
     background-color: @base00;
 
     .cm-header {
@@ -58,11 +57,11 @@ http ://ethanschoonover.com/solarized
     }
 
     // .cm-keyword セレクタの影響で3段目のリストの色も変わってしまう現象を回避
-    .cm-formatting+.cm-keyword {
+    .cm-formatting + .cm-keyword {
       color: @base06;
     }
 
-    .cm-keyword+.cm-keyword {
+    .cm-keyword + .cm-keyword {
       color: @base06;
     }
 
@@ -106,7 +105,7 @@ http ://ethanschoonover.com/solarized
     }
 
     .cm-quote {
-      color     : @base-purple;
+      color: @base-purple;
       font-style: italic;
     }
 
@@ -158,7 +157,7 @@ http ://ethanschoonover.com/solarized
 
     // Link
     .cm-url {
-      cursor                 : pointer;
+      cursor: pointer;
     }
 
     .cm-link {
@@ -168,19 +167,19 @@ http ://ethanschoonover.com/solarized
     .cm-keyword.cm-link,
     .cm-link,
     .cm-url {
-      color                  : @base-indigo;
+      color: @base-indigo;
     }
 
     .cm-string.cm-url {
-      color          : @base-indigo;
+      color: @base-indigo;
       opacity: 0.7;
-      cursor         : pointer;
+      cursor: pointer;
     }
 
     .cm-keyword.cm-em,
     .cm-em {
       font-style: italic;
-      color     : @base-lightgreen;
+      color: @base-lightgreen;
     }
 
     .cm-keyword.cm-strong,
@@ -199,19 +198,19 @@ http ://ethanschoonover.com/solarized
 
     .cm-error,
     .cm-invalidchar {
-      color        : @base-red;
+      color: @base-red;
       border-bottom: 1px dotted @base-red;
     }
 
     .cm-whitespace::before {
-      color  : @base04;
+      color: @base04;
       opacity: 0.4;
     }
 
     // carriage return
-    .CodeMirror-code>div>pre>span::after,
-    .CodeMirror-line>span::after {
-      color  : @base04;
+    .CodeMirror-code > div > pre > span::after,
+    .CodeMirror-line > span::after {
+      color: @base04;
       opacity: 0.4;
     }
 
@@ -223,23 +222,19 @@ http ://ethanschoonover.com/solarized
     .CodeMirror-placeholder {
       color: @base03;
     }
-
   }
 
   //  .CodeMirror div.CodeMirror-selected { background: @base02; }
   //  .CodeMirror.CodeMirror                          ::selection { background: rgba(87, 96, 109, 0.99); }
   //  .CodeMirror .CodeMirror-line                    ::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: rgba(87, 96, 109, 0.99); }
 
-
   /* Editor styling */
-
-
 
   /* Little shadow on the view-port of the buffer view */
   .CodeMirror {
-    -moz-box-shadow   : inset 7px 0 12px -6px #000;
+    -moz-box-shadow: inset 7px 0 12px -6px #000;
     -webkit-box-shadow: inset 7px 0 12px -6px #000;
-    box-shadow        : inset 7px 0 12px -6px #000;
+    box-shadow: inset 7px 0 12px -6px #000;
   }
 
   /* Gutter border and some shadow from it  */
@@ -252,12 +247,12 @@ http ://ethanschoonover.com/solarized
   /* Dark */
   .CodeMirror .CodeMirror-gutters {
     background-color: @base00;
-    border-color    : #4F5B66;
+    border-color: #4f5b66;
   }
 
   /* Common */
   .CodeMirror .CodeMirror-linenumber {
-    color  : @base03;
+    color: @base03;
     padding: 0 5px;
   }
 
@@ -274,7 +269,7 @@ http ://ethanschoonover.com/solarized
   }
 
   .CodeMirror .CodeMirror-cursor {
-    border-left: 2px solid #FFE9A0;
+    border-left: 2px solid #ffe9a0;
   }
 
   /*
@@ -282,14 +277,14 @@ http ://ethanschoonover.com/solarized
   view-port
   */
   .CodeMirror .CodeMirror-activeline-background {
-    background: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.1);
   }
 
   .cm-searching {
     // Ctrl + F results
-    border    : 1px solid @base-yellow;
-    padding   : 2px;
-    color     : white !important;
+    border: 1px solid @base-yellow;
+    padding: 2px;
+    color: white !important;
     background: transparent;
   }
 
@@ -299,7 +294,7 @@ http ://ethanschoonover.com/solarized
 
   .cm-inline-code:not(.cm-formatting-code),
   .gfm-codeblock-bg:not(.gfm-codeblock-begin-bg):not(.gfm-codeblock-end-bg) {
-    background: rgba(0,0,0,0.15);
+    background: rgba(0, 0, 0, 0.15);
   }
 
   .cm-inline-code:not(.cm-formatting-code) {
@@ -311,6 +306,6 @@ http ://ethanschoonover.com/solarized
 
 body:not(.platform-darwin) .editor {
   .CodeMirror-vscrollbar {
-    background: @base00
+    background: @base00;
   }
 }
