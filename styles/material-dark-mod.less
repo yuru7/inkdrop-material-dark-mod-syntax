@@ -222,6 +222,16 @@ http ://ethanschoonover.com/solarized
     .CodeMirror-placeholder {
       color: @base03;
     }
+
+    /* Active Line Highlight support */
+    .CodeMirror-activeline {
+      .CodeMirror-activeline-background, .CodeMirror-activeline-gutter {
+        background-color: fade(@base03, 20%) !important;
+      }
+      .CodeMirror-linenumber {
+        color: @base06;
+      }
+    }
   }
 
   //  .CodeMirror div.CodeMirror-selected { background: @base02; }
@@ -252,7 +262,7 @@ http ://ethanschoonover.com/solarized
 
   /* Common */
   .CodeMirror .CodeMirror-linenumber {
-    color: @base03;
+    color: @base02;
     padding: 0 5px;
   }
 
